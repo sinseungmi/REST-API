@@ -15,7 +15,7 @@ public class TestController {
 	public MemberVO member() {
 		vo.setId("sin");
 		vo.setPwd("1234");
-		vo.setName("신승미"); 
+		vo.setName("신승미");  
 		vo.setEmail("sin@test.com");
 		
 		return vo;
