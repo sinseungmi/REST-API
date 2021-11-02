@@ -15,7 +15,7 @@ public class TestController {
 	public MemberVO member() {
 		vo.setId("sin");
 		vo.setPwd("1234");
-		vo.setName("신승미");  
+		vo.setName("신승미");   //git에 업로드시 한글 깨짐이 발생한다면 프로젝트 Resource의 인코딩 타입 UTF-8로 변경
 		vo.setEmail("sin@test.com");
 		
 		return vo;
