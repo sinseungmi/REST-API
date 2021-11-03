@@ -18,6 +18,6 @@ public class MemberVO {
 	
 	@Override
 	public String toString() {
-		return String.format(id,"%s", pwd, "%s", name, "%s", email, ",", ",", ",");
+		return String.format("%s, %s, %s, %s", id, pwd, name, email);
 	}
 }
