@@ -1,5 +1,10 @@
 package com.REST.REST_TEST.ex01;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -20,4 +25,44 @@ public class TestController {
 		
 		return vo;
 	}
+	
+	@RequestMapping("/list")
+	public List<MemberVO> listMembers() {
+		List<MemberVO> list = new ArrayList<MemberVO>();
+		for (int i = 0; i < 10; i++) {
+			MemberVO mem = new MemberVO();
+			mem.setId("sin" + i);
+			mem.setPwd("123" + i);
+			mem.setName("신승미" + i);
+			mem.setEmail(String.format("sin%s@test.com", i));		
+			list.add(mem);
+		}
+		
+		return list;
+	}
+	
+	@RequestMapping("/map")
+	public Map<Integer, MemberVO> membersMap() {
+		Map<Integer, MemberVO> map = new HashMap<Integer, MemberVO>();
+		for (int i = 0; i < 10; i++) {
+			MemberVO mem = new MemberVO();
+			mem.setId("sin" + i);
+			mem.setPwd("123" + i);
+			mem.setName("신승미" + i);
+			mem.setEmail(String.format("sin%s@test.com", i));		
+			map.put(i, mem);
+		}
+		
+		return map;
+	}
 }
+
+
+
+
+
+
+
+
+
+
