@@ -14,4 +14,6 @@
 >      - PATCH - 데이터 일부 수정
 >      - DELETE - 정보 삭제
 >   2. URL - 데이터 접근
->   3. Representation - 자원의 표현
+>   3. Representation - 자원의 표현 
+>
+##### REST는 Ajax 기능과 연동해서 주로 사용된다.
