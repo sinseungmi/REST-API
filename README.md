@@ -17,3 +17,7 @@
 >      - DELETE - 정보 삭제
 >   2. URL - 데이터 접근
 >   3. Representation - 자원의 표현 
+> <br>
+>
+> - @ResponseBody을 사용하면 데이터로 반환할 수 있다.
+> - @PathVariable을 사용하면 요청 URL로 전달된 매개변수를 가져올 수 있다.
