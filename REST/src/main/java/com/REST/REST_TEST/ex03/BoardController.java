@@ -6,6 +6,7 @@ import java.util.List;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -46,8 +47,23 @@ public class BoardController {
 		return new ResponseEntity<ArticleVO>(vo, HttpStatus.OK);
 	}
 	
-	
-
+	@RequestMapping(value = "", method = RequestMethod.POST)
+	//클라이언트에서 서버로 필요한 데이터를 요청하기 위해 JSON 데이터를 요청 본문에 담아서 서버로 보내면, 
+	//서버에서는 @RequestBody 어노테이션을 사용하여 HTTP 요청 본문에 담긴 값들을 자바객체로 변환시켜, 객체에 저장한다.
+	public ResponseEntity<String> addArticle(@RequestBody ArticleVO articleVO) {
+		ResponseEntity<String> resEntity = null;
+		
+		try {
+			log.info("add 메서드 호출");
+			log.info(articleVO.toString());
+			resEntity = new ResponseEntity<String>("ADD_SUCCEEDED", HttpStatus.OK);
+		} catch (Exception e) {
+			resEntity = new ResponseEntity<String>(e.getMessage(), HttpStatus.BAD_REQUEST);
+		}
+		return resEntity;
+		
+	}
+ 
 }
 
 
