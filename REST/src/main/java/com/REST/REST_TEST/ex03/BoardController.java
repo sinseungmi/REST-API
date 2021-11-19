@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -31,5 +32,27 @@ public class BoardController {
 		}
 		return new ResponseEntity<List<ArticleVO>>(list, HttpStatus.OK);
 	}
+	
+	@RequestMapping(value = "/{articleNO}", method = RequestMethod.GET)
+	public ResponseEntity<ArticleVO> findArticle(@PathVariable("articleNO") Integer articleNO) {
+		log.info("find 메서드 호출");
+		
+		ArticleVO vo = new ArticleVO();
+		vo.setArticleNO(articleNO);
+		vo.setWriter("신승미");
+		vo.setTitle("안녕");
+		vo.setContent("신승미의 글입니다");
+		
+		return new ResponseEntity<ArticleVO>(vo, HttpStatus.OK);
+	}
+	
+	
 
 }
+
+
+
+
+
+
+
