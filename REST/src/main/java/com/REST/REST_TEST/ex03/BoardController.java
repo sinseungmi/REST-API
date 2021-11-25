@@ -66,7 +66,7 @@ public class BoardController {
  
 	@RequestMapping(value = "", method = RequestMethod.POST)
 	public ResponseEntity<String> deleteArticle(@RequestBody ArticleVO articleVO) {
-		
+		ResponseEntity<String> resEntity = null;
 	}
 	
 }
