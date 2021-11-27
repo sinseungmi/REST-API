@@ -67,6 +67,16 @@ public class BoardController {
 	@RequestMapping(value = "", method = RequestMethod.POST)
 	public ResponseEntity<String> deleteArticle(@RequestBody ArticleVO articleVO) {
 		ResponseEntity<String> resEntity = null;
+		
+		try {
+			log.info("delete 메서드 호출");
+			log.info(articleVO.toString());
+			resEntity = new ResponseEntity<String>("delete_SUCCEEDED", HttpStatus.OK);
+		} catch (Exception e) {
+			resEntity = new ResponseEntity<String>(e.getMessage(), HttpStatus.BAD_REQUEST);
+		}
+		return resEntity;
+		
 	}
 	
 }
