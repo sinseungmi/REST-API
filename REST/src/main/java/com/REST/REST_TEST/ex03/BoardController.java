@@ -44,6 +44,10 @@ public class BoardController {
 		vo.setTitle("안녕");
 		vo.setContent("신승미의 글입니다");
 		
+		ArticleVO vi = new ArticleVO();
+		vo.setArticleNO(articleNO);
+	
+		
 		return new ResponseEntity<ArticleVO>(vo, HttpStatus.OK);
 	}
 	
