@@ -1,6 +1,7 @@
 package com.REST.REST_TEST.ex03;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 import org.springframework.http.HttpStatus;
@@ -60,6 +61,8 @@ public class BoardController {
 		try {
 			log.info("add 메서드 호출");
 			log.info(articleVO.toString());
+			
+			LinkedList<String> link = new LinkedList<String>();
 			resEntity = new ResponseEntity<String>("ADD_SUCCEEDED", HttpStatus.OK);
 		} catch (Exception e) {
 			resEntity = new ResponseEntity<String>(e.getMessage(), HttpStatus.BAD_REQUEST);
