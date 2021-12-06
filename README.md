@@ -24,3 +24,5 @@
 >
 > - @ResponseBody을 사용하면 데이터로 반환할 수 있다.
 > - @PathVariable을 사용하면 요청 URL로 전달된 매개변수를 가져올 수 있다.
+>
+> https://velog.io/@kjh107704/REST-%EC%84%9C%EB%B2%84-REST-API%EB%9E%80 (REST 설명 참고)
