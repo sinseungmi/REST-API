@@ -79,6 +79,7 @@ public class BoardController {
 			log.info("delete 메서드 호출");
 	
 			resEntity = new ResponseEntity<String>("delete_SUCCEEDED", HttpStatus.OK);
+			resEntity = new ResponseEntity<String>("delete_SUCCEEDED", HttpStatus.OK);
 		} catch (Exception e) {
 			resEntity = new ResponseEntity<String>(e.getMessage(), HttpStatus.BAD_REQUEST);
 		}
