@@ -1,5 +1,6 @@
 package com.REST.REST_TEST.ex2;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -21,6 +22,7 @@ public class ResController {
 	
 	@RequestMapping("/res2")
 	public String res2() {
+		ArrayList<String> list = new ArrayList<String>();
 		return "home";
 	}
 }
