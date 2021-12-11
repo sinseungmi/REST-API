@@ -24,5 +24,15 @@
 >
 > - @ResponseBody을 사용하면 데이터로 반환할 수 있다.
 > - @PathVariable을 사용하면 요청 URL로 전달된 매개변수를 가져올 수 있다.
->
+>  <br>
+>  
+> 1. 자원(Resource) : URL <br>
+>        모든 자원에는 고유한 ID가 존재하게 되고, 이 자원은 Server에 존재한다. <br>
+>        자원을 구별하는 ID는 HTTP URL로 구분하게 된다. (ex) /members/1 <br>
+>     Client는 URL을 이용하여 자원을 지정하고 해당 자원에 대한 조작을 Server에 요청한다 <br>
+> 2. 행위(Verb) : HTTP Method <br>
+>     Client는 HTTP Method(POST, GET, DELETE, PUT)를 이용하여 지정한 자원에 대한 조작을 요청한다. <br>
+> 3. 표현(Representation of Resource) <br>
+>     Client가 Server에 자원에 대한 조작을 요청하면 Server는 이에 대한 적절한 응답(Representation)을 보낸다. <br>
+> 
 > https://velog.io/@kjh107704/REST-%EC%84%9C%EB%B2%84-REST-API%EB%9E%80 (REST 설명 참고)
