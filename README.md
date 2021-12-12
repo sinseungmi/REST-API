@@ -34,5 +34,9 @@
 >     Client는 HTTP Method(POST, GET, DELETE, PUT)를 이용하여 지정한 자원에 대한 조작을 요청한다. <br>
 > 3. 표현(Representation of Resource) <br>
 >     Client가 Server에 자원에 대한 조작을 요청하면 Server는 이에 대한 적절한 응답(Representation)을 보낸다. <br>
+> <br>
+### REST API 설계 시 주의할 점 <br>
+> * 슬래시 구분자(/)는 계층 관계를 나타낼 때 사용한다. <br>
+> * URL 마지막 문자로 슬래시(/)를 포함하지 않는다.
 > 
 > https://velog.io/@kjh107704/REST-%EC%84%9C%EB%B2%84-REST-API%EB%9E%80 (REST 설명 참고)
