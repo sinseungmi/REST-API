@@ -37,6 +37,5 @@
 > <br>
 ### REST API 설계 시 주의할 점 <br>
 > * 슬래시 구분자(/)는 계층 관계를 나타낼 때 사용한다. <br>
-> * URL 마지막 문자로 슬래시(/)를 포함하지 않는다.
 > 
 > https://velog.io/@kjh107704/REST-%EC%84%9C%EB%B2%84-REST-API%EB%9E%80 (REST 설명 참고)
