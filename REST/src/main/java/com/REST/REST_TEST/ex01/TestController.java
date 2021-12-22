@@ -56,10 +56,10 @@ public class TestController {
 		Map<Integer, MemberVO> map = new HashMap<Integer, MemberVO>();
 		for (int i = 0; i < 10; i++) {
 			MemberVO mem = new MemberVO();
-//			mem.setId("sin" + i);
-//			mem.setPwd("123" + i);
-//			mem.setName("신승미" + i);
-//			mem.setEmail(String.format("sin%s@test.com", i));		
+			mem.setId("sin" + i);
+			mem.setPwd("123" + i);
+			mem.setName("신승미" + i);
+			mem.setEmail(String.format("sin%s@test.com", i));		
 			map.put(i, mem);
 		}
 		
