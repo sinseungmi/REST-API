@@ -22,8 +22,6 @@ public class ResController {
 	
 	@RequestMapping("/res2")
 	public String res2() {
-		ArrayList<String> list = new ArrayList<String>();
-		list.add("test");
 		return "home";
 	}
 }
